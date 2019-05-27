@@ -1,4 +1,5 @@
-const countDownDate = new Date("June 5, 2020 15:32:25").getTime();
+/* COUTDOWN FUNCTION | START */
+const countDownDate = new Date("Sept 4, 2019 15:32:25").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function() {
@@ -31,22 +32,26 @@ const x = setInterval(function() {
         document.getElementById("timer").innerHTML = "EXPIRED";
     }
 }, 1000);
+/* COUTDOWN FUNCTION | END */
 
 
 window.onload = function () {
+    // Inject SVGs from templates
     const svgsToBeInjected = document.querySelectorAll("[data-svg]");
     Array.from(svgsToBeInjected).forEach((el, index) => {
-        const template = document.querySelector("template#" + el.dataset.svg);
-        const node = template.content.cloneNode(true);
-        node.querySelector("svg").setAttribute("class", el.classList);
-        el.replaceWith(node);
+        const template = document.querySelector("template#" + el.dataset.svg);          // Select template
+        const node = template.content.cloneNode(true);                                  // Clone template
+        node.querySelector("svg").setAttribute("class", el.classList);                  // Replace classes
+        el.replaceWith(node);                                                           // Replace with SVG node
     });
     
+    // Pseudo click for selecting Day 1 events
     document.querySelector("[data-day='1']").click();
-    
 }
 
+
 document.addEventListener("DOMContentLoaded", function(event) { 
+    // Initialize Swiper Carousel
     new Swiper ('.swiper-container', {
         navigation: {
             nextEl: '.swiper-button-next',
@@ -62,23 +67,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 })
 
+// Scroll listener for changing nav classes
 document.onscroll = function (e) {
     const nav = document.querySelector("nav");
-    if (window.pageYOffset > nav.clientHeight) {
-        nav.classList.add("offset");        
-    } else {        
-        nav.classList.remove("offset");        
-    }
+    if (window.pageYOffset > nav.clientHeight) nav.classList.add("offset");
+    else nav.classList.remove("offset");
 }
 
-
+// Function for toggling navbar dropdown
 function toggleNavLinks(val) {
     const nav = document.querySelector("nav");
     if (val === false) nav.classList.remove("active");
     else nav.classList.toggle("active");
 }
 
-
+// Setting visibility classes for active day events
 function activeDay(el) {
     const day = Number(el.dataset.day);
     

@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Eventophile - Event Landing Page</title>
+	<meta name="description" content="Eventophile is a free and open source, search engine friendly0 event landing page template made using Bootstrap. Made using best seo practices. Made using pure Javascript and no jQuery. It can be used for events, conferences, concerts, parties and a lot more.">
+	<meta name="keywords" content="html landing page, bootstrap landing page, event landing page, free html landing page, free bootstrap landing page, free event landing page, free html landing page template, free bootstrap landing page template, free event landing page template, landing page, free landing page, landing page template">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" href="./main.css">
-	<title>Eventophile</title>
+	<title>Eventophile - Event Landing Page</title>
 </head>
 <body>
+	<!-- NAV | START -->
 	<nav>
 		<div class="d-flex brand-wrapper w-100 w-md-50">
 			<a href="#" class="f-22 text-purple-grad">EVENTOPHILE</a>
@@ -30,7 +34,9 @@
 			</div>
 		</div>
 	</nav>
+	<!-- NAV | END -->
 	
+	<!-- HERO VIDEO | START -->
 	<div class="hero" id="">
 		<video src="./assets/video.mp4" autoplay loop muted></video>
 		<div class="overlay"></div>
@@ -44,7 +50,9 @@
 		</div>
 		<a href="#countdown" class="more-info text-white">Know More</a>
 	</div>
+	<!-- HERO VIDEO | END -->
 	
+	<!-- COUNTDOWN TIMER | START -->
 	<section class="d-flex-column countdown py-5 px-3 px-md-5">
 		<span class="anchor" id="countdown"></span>
 		<span class="title mx-auto my-5 text-center font-bold f-24 f-md-30 lh1">PARTY STARTS IN</span>
@@ -69,8 +77,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- COUNTDOWN TIMER | END -->
 	
-	
+	<!-- ABOUT | START -->
 	<section class="d-flex-column bg-purple-grad py-5 px-3 px-md-5 about text-white my-3">
 		<span class="anchor" id="about"></span>
 		<span class="title mx-auto mb-4 font-bold f-24 f-md-30 lh1">ABOUT</span>
@@ -91,9 +100,9 @@
 		<div class="overlay"></div>
 		
 	</section>
+	<!-- ABOUT | END -->
 	
-	
-	
+	<!-- ARTIST LINE-UP | START -->
 	<section class="d-flex-column py-5 px-3 px-md-5">
 		<span class="anchor" id="artists"></span>
 		<span class="title mx-auto mb-4 font-bold f-24 f-md-30 lh1">ARTIST LINE-UP</span>
@@ -191,8 +200,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- ARTIST LINE-UP | END -->
 	
-	
+	<!-- BANNER | START -->
 	<div class="bg-purple-grad promo perfect-center">
 		<div class="overlay top"></div>
 		<div class="row w-md-75 mx-auto">
@@ -203,67 +213,84 @@
 		</div>
 		<div class="overlay bottom"></div>
 	</div>
+	<!-- BANNER | END -->
 	
-	
+	<!-- SCHEDULE | START -->
 	<section class="d-flex-column p-3 p-md-5 schedule">
 		<span class="anchor" id="schedule"></span>
 		<span class="title mx-auto mb-4 font-bold f-24 f-md-30 lh1">SCHEDULE</span>
-		<div class="row justify-content-center w-md-50 mx-auto pb-4 text-purple">
+		
+		<!-- DAY BOXES | START -->
+		<div class="row justify-content-center w-md-75 mx-auto pb-4 text-purple">
 			<div class="p-4 p-md-5 perfect-center days" onclick="activeDay(this)" data-day="1">DAY 1</div>
 			<div class="p-4 p-md-5 mx-2 mx-md-4 perfect-center days" onclick="activeDay(this)" data-day="2">DAY 2</div>
 			<div class="p-4 p-md-5 perfect-center days" onclick="activeDay(this)" data-day="3">DAY 3</div>
 		</div>
+		<!-- DAY BOXES | END -->
 		
 		<div class="w-md-75 mx-auto my-4">
+			
+			<!-- EVENTS DAY 1 | START -->
 			<div class="row border mb-4 event" data-parent-day="1">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">5:00 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">5:00 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Opening Performance by MC Tony</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
+			<!-- EVENTS DAY 1 | END -->
+			
+			<!-- EVENTS DAY 2 | START -->
 			<div class="row border mb-4 event" data-parent-day="2">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">5:30 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">5:30 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Performance by DJ AC</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
 			<div class="row border mb-4 event" data-parent-day="2">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">7:00 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">7:00 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Performance by Elizabeth Tyson</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
+			<!-- EVENTS DAY 2 | END -->
+			
+			<!-- EVENTS DAY 3 | START -->
 			<div class="row border mb-4 event" data-parent-day="3">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">6:00 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">6:00 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Performance by Ryan Richards</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
 			<div class="row border mb-4 event" data-parent-day="3">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">7:30 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">7:30 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Performance by H&amp;K</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
 			<div class="row border mb-4 event" data-parent-day="3">
-				<div class="col-12 col-md-2 p-3 p-md-5 bg-purple text-white font-bold perfect-center">9:00 PM</div>
+				<div class="col-12 col-md-2 p-3 py-md-5 bg-purple text-white font-bold perfect-center">9:00 PM</div>
 				<div class="col-12 col-md-10 p-3 p-md-5">
 					<p class="font-bold">Performance by Michelle Reynolds</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio minus assumenda consequatur dicta nesciunt ut sapiente rerum eius ratione consequuntur maiores illo fuga libero, porro accusamus aperiam magnam corporis!</p>
 				</div>
 			</div>
+			<!-- EVENTS DAY 3 | END -->
+			
 		</div>
 	</section>
+	<!-- SCHEDULE | END -->
 	
-	
+	<!-- TICKET | START -->
 	<section class="d-flex-column p-3 p-md-5 bg-light buy-now">
 		<span class="anchor" id="tickets"></span>
 		<span class="title mx-auto mb-4 font-bold f-24 f-md-30 lh1">BUY TICKETS</span>
+		
+		<!-- SWIPER | START -->
 		<div class="row w-100 w-md-75 mx-auto text-center swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -308,7 +335,7 @@
 					<div class="border p-3 ticket" data-vip="no">
 						<p class="font-bold f-18">
 							<span data-svg="ticket" class="icon mr-1"></span>
-							THREE DAY TICKET
+							3-DAY TICKET
 						</p>
 						<hr>
 						<ul class="f-18">
@@ -327,7 +354,7 @@
 					<div class="border p-3 ticket" data-vip="yes">
 						<p class="font-bold f-18">
 							<span data-svg="ticket" class="icon mr-1"></span>
-							THREE DAY VIP TICKET
+							3-DAY VIP TICKET
 						</p>
 						<hr>
 						<ul class="f-18">
@@ -346,58 +373,70 @@
 		</div>
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>
+		<!-- SWIPER |END -->
+		
 	</section>
+	<!-- TICKET | END -->
 	
-	
+	<!-- SPONSORS | START -->
 	<section class="d-flex-column p-3 p-md-5 sponsors">
 		<span class="anchor" id="sponsors"></span>
 		<span class="title mx-auto mb-4 font-bold f-24 f-md-30 lh1">OUR SPONSORS</span>
+		
+		<!-- GOLD SPONSORS | START -->
 		<p class="text-center font-bold f-24 text-purple-grad mt-5">GOLD SPONSORS</p>
 		<div class="w-md-75 mx-auto row align-items-center my-3" data-sponsor="gold">
-			<a href="#" class="perfect-center col-6 col-md-3 mb-3">
+			<a href="#" class="perfect-center col-6 col-lg-3 mb-3">
 				<img src="./assets/logo1.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-6 col-md-3 mb-3">
+			<a href="#" class="perfect-center col-6 col-lg-3 mb-3">
 				<img src="./assets/logo2.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-6 col-md-3 mb-3">
+			<a href="#" class="perfect-center col-6 col-lg-3 mb-3">
 				<img src="./assets/logo2.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-6 col-md-3 mb-3">
+			<a href="#" class="perfect-center col-6 col-lg-3 mb-3">
 				<img src="./assets/logo1.png" alt="" class="w-100 img-fluid">
 			</a>
 		</div>
+		<!-- GOLD SPONSORS | END -->
+		
+		<!-- SILVER SPONSORS | START -->
 		<p class="text-center font-bold f-20 text-purple-grad mt-5">SILVER SPONSORS</p>
 		<div class="w-md-75 mx-auto row align-items-center my-3" data-sponsor="silver">
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo1.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo2.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo3.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo3.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo2.png" alt="" class="w-100 img-fluid">
 			</a>
-			<a href="#" class="perfect-center col-4 col-md-2 mb-2">
+			<a href="#" class="perfect-center col-4 col-lg-2 mb-2">
 				<img src="./assets/logo1.png" alt="" class="w-100 img-fluid">
 			</a>
 		</div>
+		<!-- SILVER SPONSORS | END -->
+		
 	</section>
+	<!-- SPONSORS | END -->
 	
-	<footer class="bg-dark text-white py-5" id="footer">
-		<div class="row mt-5 w-md-75 mx-auto justify-content-around">
-			<div class="w-100 w-md-25 py-3 px-4">
+	<!-- FOOTER | START -->
+	<footer class="bg-dark text-white pt-4" id="footer">
+		<div class="content row py-5 w-md-75 mx-auto justify-content-around">
+			<div class="w-100 w-md-25 py-3 px-4 px-md-0">
 				<p class="f-18 text-underline mb-3">ABOUT EVENTOPHILE</p>
 				<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto, veniam enim quod totam, asperiores minus natus nam cum illo, cupiditate commodi!</p>
 			</div>
 			
-			<div class="w-100 w-md-25 py-3 px-4">
+			<div class="w-100 w-md-25 py-3 px-4 px-md-0">
 				<p class="f-18 text-underline mb-3">NAVIGATION LINKS</p>
 				<div class="row">
 					<div class="w-50">
@@ -415,7 +454,7 @@
 				</div>
 			</div>
 			
-			<div class="w-100 w-md-25 py-3 px-4">
+			<div class="w-100 w-md-25 py-3 px-4 px-md-0">
 				<p class="f-18 text-underline mb-3">CONTACT US</p>
 				<a target="_blank" href="mailto:john.doe@email.com"><span data-svg="mail" class="icon mr-2"></span> john.doe@email.com</a>
 				<a target="_blank" href="tel: 1111111111"><span data-svg="phone" class="icon mr-2 flip-x"></span> + (111)-111-1111</a>
@@ -424,14 +463,29 @@
 			</div>
 			
 		</div>
+		
+		<div class="py-3 border-top f-14">
+			<p class="row w-md-75 px-4 mx-auto">
+				<span class="text-light">
+					&copy; Developed by:
+					<a href="http://pavanmahadik.tk" target="_blank" class="font-bold ml-1 mr-5">Pavan Mahadik</a>
+				</span>
+
+				<span class="text-light ml-sm-auto">
+					Pattern image by:
+					<a href="https://www.freepik.com" target="_blank" class="font-bold ml-1">Freepik</a>
+				</span>
+			</p>
+		</div>
 	</footer>
+	<!-- FOOTER | END -->
 	
 	
 	
 	
 	
 	
-	
+	<!-- SVG ICONS | START -->
 	<template id="instagram">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
 	</template>
@@ -455,23 +509,10 @@
 	<template id="phone">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
 	</template>
+	<!-- SVG ICONS | END -->
+	
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- 
-	
-	Unsplash images
-	https://unsplash.com/photos/5-2V3FuMEXo
-	https://unsplash.com/photos/xmrL-yps7gI
-	https://unsplash.com/photos/Z9p4M58Hdyo
-	https://unsplash.com/photos/fSE3gQ_gSGg
-	https://unsplash.com/photos/0DHVUL5VCrs
-	https://unsplash.com/photos/7XlgyctFS3o
-	
--->
