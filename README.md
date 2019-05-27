@@ -24,6 +24,7 @@ Open ```http://localhost:8000``` on browser
 
 * [Bootstrap](https://getbootstrap.com) - CSS library used
 * [Swiper](https://idangero.us/swiper/) - For slider
+* [Font-Awesome](https://fontawesome.com) - SVG icons used
 
 
 ## Authors
