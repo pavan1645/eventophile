@@ -59,6 +59,8 @@ nav {
     top: 0;
     width: 100%;
     z-index: 12;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 3s forwards;
 }
 
 nav .brand-wrapper {
@@ -137,6 +139,8 @@ nav.offset .brand-wrapper, nav.offset .link-wrapper { background-color: white; }
     align-items: center;
     justify-content: center;
     position: relative;
+    background: url("https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat;
+    background-size: cover;
     background-position: center;
     width: 100%;
     min-height: 90vh;
