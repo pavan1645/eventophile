@@ -13,9 +13,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
 	<title>Eventophile - Event Landing Page</title>
 	<meta name="description" content="Eventophile is a responsive, free and open source, search engine friendly event landing page template made using Bootstrap. Made using best seo practices. Developed using pure Javascript and no jQuery. It can be used for events, conferences, concerts, parties and a lot more.">
 	<meta name="keywords" content="html landing page, bootstrap landing page, event landing page, free html landing page, free bootstrap landing page, free event landing page, free html landing page template, free bootstrap landing page template, free event landing page template, landing page, free landing page, landing page template, responsive template">	
+	<meta name="author" content="Pavan Mahadik">
+	
+	<!-- OPEN GRAPH -->
+	<meta property="og:title" content="Eventophile - Event Landing Page" />
+	<meta property="og:type" content="business.business" />
+	<meta property="business:contact_data:locality" content="San Diego">
+	<meta property="business:contact_data:region" content="California">
+	<meta property="business:contact_data:country_name" content="United States">
+	<meta property="og:url" content="https://eventophile.tk/" />
+	<meta property="og:image" content="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=360&q=0" />
+	<meta property="og:description" content="Eventophile is a responsive, free and open source, search engine friendly event landing page template made using Bootstrap. Made using best seo practices. Developed using pure Javascript and no jQuery. It can be used for events, conferences, concerts, parties and a lot more." />
+	
+	<!-- STYLES -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" href="./main.css">
@@ -99,7 +113,7 @@
 				Enjoy the most happening party in town as we are on till dawn. 
 				With some of the biggest DJ's and singers in San Diego performing right before you. <br>
 				We bet, you have never experienced something like this ever before!
-				So grab your dancing shoes and show us some moves!:dancer. <br> <br>
+				So grab your dancing shoes and show us some moves! <br> <br>
 				#<strong>DrinkTillYouDrop</strong> <br> <br>
 				Champagne Showers all eve. <br>
 				Featuring - *<strong>Madoc</strong>* <br>
@@ -484,7 +498,7 @@
 					Pattern image by:
 					<a href="https://www.freepik.com" target="_blank" class="font-bold ml-1">Freepik</a>
 				</span>
-
+				
 				<span class="text-light mr-5 mb-1">
 					Source code:
 					<a href="https://github.com/pavan1645/eventophile" target="_blank" class="font-bold ml-1">Github</a>
@@ -525,8 +539,25 @@
 	</template>
 	<!-- SVG ICONS | END -->
 	
-	
-	
+
+	<!-- JSON-LD DATA -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "Event",
+			"name": "Eventophile",
+			"description": "Enjoy the most happening party in town as we are on till dawn. With some of the biggest DJ's and singers in San Diego performing right before you. We bet, you have never experienced something like this ever before! So grab your dancing shoes and show us some moves!",
+			"startDate": "2019-09-04",
+			"endDate": "2019-09-04",
+			"location": {
+				"@type": "Place",
+				"address": {
+					"addressLocality": "San Diego",
+					"addressRegion": "California"
+				}
+			}
+		}
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="./main.js"></script>
 </body>
